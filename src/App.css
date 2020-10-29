@@ -3,47 +3,57 @@
   flex-direction: column;
   height: 30vh;
   padding: 2vh;
-  align-items : center;
+  align-items: center;
   justify-content: center;
 }
 .AuthContainer > * {
   display: flex;
-  margin : 1vh;
+  margin: 1vh;
   padding: 1vh;
-  width : 30vw;
+  width: 30vw;
   justify-content: center;
 }
 
 .AuthContainer > .AuthInputButton {
-  max-width : 200px;
+  max-width: 200px;
 }
 
-.StoresListContainer{
+.StoresListContainer {
   display: flex;
   flex-direction: column;
-  align-items : center;
+  align-items: center;
   justify-content: center;
 }
-.StoresListContainer>.StoresListLabel{
-  border-bottom : 1px dotted grey;
-  
+.StoresListContainer > .StoresListLabel {
+  border-bottom: 1px dotted grey;
+
   display: flex;
   justify-content: center;
   font-size: 1.3rem;
-  margin-top: 2vh;;
-  margin-bottom: 2vh;;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
-.StoresListContainer>.StoresListTable{
-  border : 1px dashed grey;
+.StoresListContainer > .StoresListTable {
+  border: 1px dashed grey;
   width: 30%;
   justify-content: center;
 }
-.StoresListContainer>.StoresListTable thead{
-  font-size : 0.9rem;
-  font-weight : bold;
+.StoresListContainer > .StoresListTable thead {
+  font-size: 0.9rem;
+  font-weight: bold;
 }
-.StoresListContainer>.StoresListTable td{
-  border : 1px dashed grey;
+.StoresListContainer > .StoresListTable td {
+  border: 1px dashed grey;
   justify-content: center;
-  font-size : 0.8rem;
+  font-size: 0.8rem;
+}
+
+.LogoffSection {
+  display: flex;
+  justify-content: flex-end;
+  padding: 2vh;
+}
+.LogoffSection > button {
+  padding: 1rem;
+  cursor: pointer;
 }
