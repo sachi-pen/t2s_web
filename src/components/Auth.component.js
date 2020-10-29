@@ -1,8 +1,11 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { APP_CNST_TOKEN_LABEL } from "../App.constants";
 
 export default function TokenComponent({ onSubmit }) {
   const [inputVal, setInputVal] = useState("");
+  useEffect(()=>{
+    localStorage.removeItem(APP_CNST_TOKEN_LABEL);
+  },[])
   const handleSubmit = () => {
     localStorage.setItem(APP_CNST_TOKEN_LABEL, inputVal);
     onSubmit();
